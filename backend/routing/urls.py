@@ -1,6 +1,7 @@
+# routing/urls.py
 from django.urls import path
-from .views import RouteAPIView
+from .views import RoutePlannerView
 
 urlpatterns = [
-    path("route/", RouteAPIView.as_view())
+    path('route/', RoutePlannerView.as_view(), name='route'),
 ]
